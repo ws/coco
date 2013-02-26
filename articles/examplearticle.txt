@@ -1,0 +1,3 @@
+An Example Article
+
+Hello, world!
