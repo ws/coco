@@ -1,0 +1,13 @@
+{
+    "name": "ws/coco",
+    "description": "A static blog engine with puns.",
+    "authors": [
+        {
+            "name": "Will Smidlein",
+            "email": "will@willsmidlein.com"
+        }
+    ],
+    "require": {
+    	"twig/twig": "1.*"
+    }
+}
