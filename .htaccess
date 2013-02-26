@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^$ /%{REQUEST_URI}/output/ [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/output/
+RewriteRule ^(.*)$ /output/$1.html
