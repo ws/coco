@@ -2,15 +2,21 @@
 
 require_once '../vendor/autoload.php';
 
-// Note: Adding specific file gen in a bit. Should save some resources.
+function genOne($file){
+	
+}
 
-if ($handle = opendir('../articles')) {
+function genAll(){
+	
+	if ($handle = opendir('../articles')) {
 
-    while (false !== ($file = readdir($handle))) {
-        if (strpos($file,'.txt') !== false) {
-            
-        }
-    }
+    	while (false !== ($file = readdir($handle))) {
+        	if (strpos($file,'.txt')) {
+            	genOne($file);
+        	}
+    	}
 
-    closedir($handle);
+    	closedir($handle);
+	}
+	
 }
